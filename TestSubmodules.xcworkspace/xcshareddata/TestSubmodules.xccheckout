@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>963C52A0-2A43-4628-A907-55F4B57DD2C2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestSubmodules</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2717E41114749578DDFDECB59CEAA2E0B8408AAA</key>
+		<string>https://github.com/sbausis/TestSubmodules.git</string>
+		<key>AA3724F8AD565DB2089C5757B6B76FDB09E52E51</key>
+		<string>https://github.com/sbausis/SBJson.git</string>
+		<key>F851E1D8A348ED6D1513B00F69F61CD978F43008</key>
+		<string>https://github.com/sbausis/appledoc.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestSubmodules.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2717E41114749578DDFDECB59CEAA2E0B8408AAA</key>
+		<string>..</string>
+		<key>AA3724F8AD565DB2089C5757B6B76FDB09E52E51</key>
+		<string>..SBJson/</string>
+		<key>F851E1D8A348ED6D1513B00F69F61CD978F43008</key>
+		<string>..appledoc/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sbausis/TestSubmodules.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2717E41114749578DDFDECB59CEAA2E0B8408AAA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F851E1D8A348ED6D1513B00F69F61CD978F43008</string>
+			<key>IDESourceControlWCCName</key>
+			<string>appledoc</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AA3724F8AD565DB2089C5757B6B76FDB09E52E51</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SBJson</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2717E41114749578DDFDECB59CEAA2E0B8408AAA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestSubmodules</string>
+		</dict>
+	</array>
+</dict>
+</plist>
