@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4773B2CE19F4641800291B77 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4773B2D519F4641800291B77 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				4773B2D619F4642500291B77 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		478AF2C219F4566F009B1F8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AF2C119F4566F009B1F8F /* main.m */; };
 		478AF2C519F4566F009B1F8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AF2C419F4566F009B1F8F /* AppDelegate.m */; };
@@ -200,9 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				478AF2F219F45AAB009B1F8F /* SBJson.framework */,
-				478AF2F419F45AAB009B1F8F /* SBJsonTests.xctest */,
+				478AF2F419F45AAB009B1F8F /* SBJsonTests.octest */,
 				478AF2F619F45AAB009B1F8F /* libsbjson-ios.a */,
-				478AF2F819F45AAB009B1F8F /* sbjson-iosTests.xctest */,
+				478AF2F819F45AAB009B1F8F /* sbjson-iosTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +271,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Simon Pascal Baur";
 				TargetAttributes = {
+					4773B2CE19F4641800291B77 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
 					478AF2BB19F4566F009B1F8F = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
@@ -291,6 +308,7 @@
 			targets = (
 				478AF2BB19F4566F009B1F8F /* TestSubmodules */,
 				478AF2CE19F4566F009B1F8F /* TestSubmodulesTests */,
+				4773B2CE19F4641800291B77 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -317,10 +335,10 @@
 			remoteRef = 478AF2F119F45AAB009B1F8F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		478AF2F419F45AAB009B1F8F /* SBJsonTests.xctest */ = {
+		478AF2F419F45AAB009B1F8F /* SBJsonTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = SBJsonTests.xctest;
+			path = SBJsonTests.octest;
 			remoteRef = 478AF2F319F45AAB009B1F8F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -331,10 +349,10 @@
 			remoteRef = 478AF2F519F45AAB009B1F8F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		478AF2F819F45AAB009B1F8F /* sbjson-iosTests.xctest */ = {
+		478AF2F819F45AAB009B1F8F /* sbjson-iosTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "sbjson-iosTests.xctest";
+			path = "sbjson-iosTests.octest";
 			remoteRef = 478AF2F719F45AAB009B1F8F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -358,6 +376,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4773B2D619F4642500291B77 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Build an Xcode documentation\necho \"SOURCE_ROOT : $SOURCE_ROOT/..\"\ncd \"$SOURCE_ROOT/..\"\nappledoc -p TestSubmodules -c 0rca.ch --company-id ch.0rca -h -i SBJson -i appledoc --no-create-docset -o Documentation .\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		478AF2B819F4566F009B1F8F /* Sources */ = {
@@ -409,6 +443,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4773B2CF19F4641800291B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4773B2D019F4641800291B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		478AF2D719F4566F009B1F8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -560,6 +608,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4773B2D519F4641800291B77 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4773B2CF19F4641800291B77 /* Debug */,
+				4773B2D019F4641800291B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		478AF2B719F4566F009B1F8F /* Build configuration list for PBXProject "TestSubmodules" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

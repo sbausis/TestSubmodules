@@ -16,12 +16,18 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    
     NSDictionary* dict = [NSDictionary dictionaryWithDictionary:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"Hello", @"World", nil]];
     NSLog(@"DICT : %@", dict);
+    [self.label1 setStringValue:[NSString stringWithFormat:@"DICT : %@", dict]];
+    
     NSString* json = [dict JSONRepresentation];
     NSLog(@"JSON : %@", json);
+    [self.label2 setStringValue:[NSString stringWithFormat:@"JSON : %@", json]];
+    
     NSDictionary* newDict = [json JSONValue];
     NSLog(@"DICT : %@", newDict);
+    [self.label3 setStringValue:[NSString stringWithFormat:@"DICT : %@", newDict]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
