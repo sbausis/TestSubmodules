@@ -12,6 +12,8 @@
 		478AF2C719F4566F009B1F8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 478AF2C619F4566F009B1F8F /* Images.xcassets */; };
 		478AF2CA19F4566F009B1F8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 478AF2C819F4566F009B1F8F /* MainMenu.xib */; };
 		478AF2D619F4566F009B1F8F /* TestSubmodulesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 478AF2D519F4566F009B1F8F /* TestSubmodulesTests.m */; };
+		478AF2FB19F45B82009B1F8F /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478AF2F219F45AAB009B1F8F /* SBJson.framework */; };
+		478AF2FD19F45B99009B1F8F /* SBJson.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 478AF2F219F45AAB009B1F8F /* SBJson.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +24,76 @@
 			remoteGlobalIDString = 478AF2BB19F4566F009B1F8F;
 			remoteInfo = TestSubmodules;
 		};
+		478AF2E419F457BE009B1F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 478AF2DF19F457BE009B1F8F /* appledoc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
+			remoteInfo = appledoc;
+		};
+		478AF2E619F457BE009B1F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 478AF2DF19F457BE009B1F8F /* appledoc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 733EA125122BDD020060CBDE;
+			remoteInfo = AppledocTests;
+		};
+		478AF2E819F459C7009B1F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 478AF2DF19F457BE009B1F8F /* appledoc.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DD76F960486AA7600D96B5E;
+			remoteInfo = appledoc;
+		};
+		478AF2F119F45AAB009B1F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 478AF2EA19F45AAB009B1F8F /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC12323D1391D5CC00131607;
+			remoteInfo = SBJson;
+		};
+		478AF2F319F45AAB009B1F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 478AF2EA19F45AAB009B1F8F /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC1232521391D5CC00131607;
+			remoteInfo = SBJsonTests;
+		};
+		478AF2F519F45AAB009B1F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 478AF2EA19F45AAB009B1F8F /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC2626913920FC7003D9994;
+			remoteInfo = "sbjson-ios";
+		};
+		478AF2F719F45AAB009B1F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 478AF2EA19F45AAB009B1F8F /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC2627313920FC7003D9994;
+			remoteInfo = "sbjson-iosTests";
+		};
+		478AF2F919F45B7B009B1F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 478AF2EA19F45AAB009B1F8F /* SBJson.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC12323C1391D5CC00131607;
+			remoteInfo = SBJson;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		478AF2FC19F45B92009B1F8F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				478AF2FD19F45B99009B1F8F /* SBJson.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		478AF2BC19F4566F009B1F8F /* TestSubmodules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSubmodules.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +106,8 @@
 		478AF2CF19F4566F009B1F8F /* TestSubmodulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSubmodulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		478AF2D419F4566F009B1F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478AF2D519F4566F009B1F8F /* TestSubmodulesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSubmodulesTests.m; sourceTree = "<group>"; };
+		478AF2DF19F457BE009B1F8F /* appledoc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = appledoc.xcodeproj; path = ../appledoc/appledoc.xcodeproj; sourceTree = "<group>"; };
+		478AF2EA19F45AAB009B1F8F /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SBJson.xcodeproj; path = ../SBJson/SBJson.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				478AF2FB19F45B82009B1F8F /* SBJson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +132,8 @@
 		478AF2B319F4566F009B1F8F = {
 			isa = PBXGroup;
 			children = (
+				478AF2EA19F45AAB009B1F8F /* SBJson.xcodeproj */,
+				478AF2DF19F457BE009B1F8F /* appledoc.xcodeproj */,
 				478AF2BE19F4566F009B1F8F /* TestSubmodules */,
 				478AF2D219F4566F009B1F8F /* TestSubmodulesTests */,
 				478AF2BD19F4566F009B1F8F /* Products */,
@@ -111,6 +187,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		478AF2E019F457BE009B1F8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				478AF2E519F457BE009B1F8F /* appledoc */,
+				478AF2E719F457BE009B1F8F /* AppledocTests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		478AF2EB19F45AAB009B1F8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				478AF2F219F45AAB009B1F8F /* SBJson.framework */,
+				478AF2F419F45AAB009B1F8F /* SBJsonTests.xctest */,
+				478AF2F619F45AAB009B1F8F /* libsbjson-ios.a */,
+				478AF2F819F45AAB009B1F8F /* sbjson-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 478AF2D919F4566F009B1F8F /* Build configuration list for PBXNativeTarget "TestSubmodules" */;
 			buildPhases = (
+				478AF2FC19F45B92009B1F8F /* CopyFiles */,
 				478AF2B819F4566F009B1F8F /* Sources */,
 				478AF2B919F4566F009B1F8F /* Frameworks */,
 				478AF2BA19F4566F009B1F8F /* Resources */,
@@ -125,6 +222,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				478AF2FA19F45B7B009B1F8F /* PBXTargetDependency */,
+				478AF2E919F459C7009B1F8F /* PBXTargetDependency */,
 			);
 			name = TestSubmodules;
 			productName = TestSubmodules;
@@ -178,6 +277,16 @@
 			mainGroup = 478AF2B319F4566F009B1F8F;
 			productRefGroup = 478AF2BD19F4566F009B1F8F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 478AF2E019F457BE009B1F8F /* Products */;
+					ProjectRef = 478AF2DF19F457BE009B1F8F /* appledoc.xcodeproj */;
+				},
+				{
+					ProductGroup = 478AF2EB19F45AAB009B1F8F /* Products */;
+					ProjectRef = 478AF2EA19F45AAB009B1F8F /* SBJson.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				478AF2BB19F4566F009B1F8F /* TestSubmodules */,
@@ -185,6 +294,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		478AF2E519F457BE009B1F8F /* appledoc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = appledoc;
+			remoteRef = 478AF2E419F457BE009B1F8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		478AF2E719F457BE009B1F8F /* AppledocTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AppledocTests.app;
+			remoteRef = 478AF2E619F457BE009B1F8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		478AF2F219F45AAB009B1F8F /* SBJson.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SBJson.framework;
+			remoteRef = 478AF2F119F45AAB009B1F8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		478AF2F419F45AAB009B1F8F /* SBJsonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SBJsonTests.xctest;
+			remoteRef = 478AF2F319F45AAB009B1F8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		478AF2F619F45AAB009B1F8F /* libsbjson-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libsbjson-ios.a";
+			remoteRef = 478AF2F519F45AAB009B1F8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		478AF2F819F45AAB009B1F8F /* sbjson-iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "sbjson-iosTests.xctest";
+			remoteRef = 478AF2F719F45AAB009B1F8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		478AF2BA19F4566F009B1F8F /* Resources */ = {
@@ -230,6 +384,16 @@
 			isa = PBXTargetDependency;
 			target = 478AF2BB19F4566F009B1F8F /* TestSubmodules */;
 			targetProxy = 478AF2D019F4566F009B1F8F /* PBXContainerItemProxy */;
+		};
+		478AF2E919F459C7009B1F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = appledoc;
+			targetProxy = 478AF2E819F459C7009B1F8F /* PBXContainerItemProxy */;
+		};
+		478AF2FA19F45B7B009B1F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SBJson;
+			targetProxy = 478AF2F919F45B7B009B1F8F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -325,9 +489,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = TestSubmodules/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -336,9 +507,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = TestSubmodules/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -398,6 +576,7 @@
 				478AF2DB19F4566F009B1F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		478AF2DC19F4566F009B1F8F /* Build configuration list for PBXNativeTarget "TestSubmodulesTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +585,7 @@
 				478AF2DE19F4566F009B1F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

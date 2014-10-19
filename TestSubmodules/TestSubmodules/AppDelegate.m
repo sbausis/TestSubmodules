@@ -16,7 +16,12 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    NSDictionary* dict = [NSDictionary dictionaryWithDictionary:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"Hello", @"World", nil]];
+    NSLog(@"DICT : %@", dict);
+    NSString* json = [dict JSONRepresentation];
+    NSLog(@"JSON : %@", json);
+    NSDictionary* newDict = [json JSONValue];
+    NSLog(@"DICT : %@", newDict);
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <SBJson/SBJson.h>
+#import <SBJson/NSObject+SBJson.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

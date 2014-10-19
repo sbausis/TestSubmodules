@@ -2,3 +2,7 @@
 	path = appledoc
 	url = https://github.com/sbausis/appledoc.git
 	branch = master
+[submodule "SBJson"]
+	path = SBJson
+	url = https://github.com/sbausis/SBJson.git
+	branch = master
