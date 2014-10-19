@@ -1,0 +1,4 @@
+[submodule "appledoc"]
+	path = appledoc
+	url = https://github.com/sbausis/appledoc.git
+	branch = master
